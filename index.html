@@ -6,337 +6,217 @@
 
 <title>EZESjnr Engineering Consult</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-body{
-line-height:1.7;
-color:#333;
-}
-
-header{
-background:#0f172a;
-color:white;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
-height:90vh;
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url('https://images.unsplash.com/photo-1504307651254-35680f356dfd');
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-padding:20px;
-}
-
-.hero-content{
-max-width:900px;
-}
-
-.hero h1{
-font-size:55px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-background:#f59e0b;
-padding:15px 30px;
-border-radius:5px;
-text-decoration:none;
-color:white;
-font-weight:bold;
-}
-
-section{
-padding:80px 8%;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:50px;
-font-size:40px;
-color:#0f172a;
-}
-
-.about{
-background:#f8fafc;
-}
-
-.services-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-
-.service-card{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.service-card:hover{
-transform:translateY(-5px);
-}
-
-.service-card h3{
-color:#0f172a;
-margin-bottom:15px;
-}
-
-.projects{
-background:#f1f5f9;
-}
-
-.project-box{
-background:white;
-padding:25px;
-margin-bottom:20px;
-border-left:5px solid #f59e0b;
-}
-
-.process{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-text-align:center;
-}
-
-.step{
-background:#f8fafc;
-padding:30px;
-border-radius:10px;
-}
-
-.contact{
-background:#0f172a;
-color:white;
-text-align:center;
-}
-
-.contact h2{
-color:white;
-}
-
-footer{
-background:black;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-</style>
 </head>
-
 <body>
 
 <header>
-<div class="logo">EZESjnr Engineering Consult</div>
+
+<div class="logo-area">
+
+<img src="images/eec-logo.png" alt="EEC Logo">
+
+<div>
+<h2>EZESjnr Engineering Consult</h2>
+<p>Engineering Excellence • Innovative Solutions</p>
+</div>
+
+</div>
 
 <nav>
+
+<a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#projects">Projects</a>
+<a href="#consultant">Consultant</a>
 <a href="#contact">Contact</a>
+
 </nav>
+
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 
-<div class="hero-content">
+<div class="overlay">
 
 <h1>Engineering Excellence. Innovative Solutions. Trusted Results.</h1>
 
 <p>
-Professional Civil, Structural, Construction Management
-and Engineering Consultancy Services.
+We design safe structures, manage successful construction projects,
+and provide professional engineering consultancy services that help
+clients transform ideas into durable realities.
 </p>
 
-<a href="#contact" class="btn">Request Consultation</a>
+<a href="#contact" class="btn">
+Request Consultation
+</a>
 
 </div>
 
 </section>
 
-<section id="about" class="about">
+<section id="about">
 
-<h2 class="section-title">About Us</h2>
+<h2>About Us</h2>
 
-<p style="text-align:center; max-width:900px; margin:auto;">
-EZESjnr Engineering Consult provides innovative engineering
-solutions for residential, commercial, industrial and
-infrastructure projects. We combine technical expertise,
-modern engineering tools and industry best practices to
-deliver safe, economical and sustainable engineering solutions.
+<p>
+
+EZESjnr Engineering Consult provides innovative engineering solutions
+for residential, commercial, industrial and infrastructure projects.
+
+We combine technical expertise, modern engineering tools and industry
+best practices to deliver safe, economical and sustainable engineering solutions.
+
 </p>
+
+</section>
+
+<section class="stats">
+
+<div>
+<h3>150+</h3>
+<p>Projects Completed</p>
+</div>
+
+<div>
+<h3>100+</h3>
+<p>Satisfied Clients</p>
+</div>
+
+<div>
+<h3>10+</h3>
+<p>Years Experience</p>
+</div>
+
+<div>
+<h3>100%</h3>
+<p>Commitment to Quality</p>
+</div>
 
 </section>
 
 <section id="services">
 
-<h2 class="section-title">Our Services</h2>
+<h2>Our Services</h2>
 
-<div class="services-grid">
+<div class="cards">
 
-<div class="service-card">
+<div class="card">
 <h3>Civil & Structural Engineering</h3>
-<p>Structural analysis, reinforced concrete design, steel structures, retaining walls, foundation design and detailing.</p>
+<p>Structural analysis, reinforced concrete design, steel structures, retaining walls and foundation engineering.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <h3>Construction Project Management</h3>
-<p>Project planning, scheduling, supervision, quality control and contract administration.</p>
+<p>Project planning, scheduling, supervision and quality control.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <h3>Building Design & Drafting</h3>
-<p>Architectural drafting, AutoCAD drawings, construction drawings and BIM modeling.</p>
+<p>Architectural drafting, AutoCAD drawings and BIM modelling.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <h3>Geotechnical Engineering</h3>
-<p>Soil investigation interpretation, bearing capacity analysis and foundation recommendations.</p>
+<p>Soil investigation interpretation and foundation recommendations.</p>
 </div>
 
-<div class="service-card">
-<h3>Water Resources Engineering</h3>
-<p>Drainage systems, flood control, stormwater management and water supply design.</p>
-</div>
-
-<div class="service-card">
+<div class="card">
 <h3>Transportation Engineering</h3>
-<p>Road design, pavement design and infrastructure planning.</p>
+<p>Road design, pavement design and traffic planning.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
+<h3>Water Resources Engineering</h3>
+<p>Drainage systems, flood control and stormwater management.</p>
+</div>
+
+<div class="card">
 <h3>Engineering Consultancy</h3>
-<p>Feasibility studies, technical reports, engineering audits and expert advisory services.</p>
+<p>Feasibility studies, engineering reports and technical advisory services.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <h3>BIM & Digital Engineering</h3>
-<p>3D modeling, design optimization, digital engineering and visualization.</p>
+<p>3D modelling, visualization and engineering optimization.</p>
 </div>
 
-<div class="service-card">
+<div class="card">
 <h3>Training & Capacity Development</h3>
-<p>AutoCAD, ETABS, SAP2000, structural design and engineering software training.</p>
+<p>AutoCAD, ETABS, SAP2000 and structural design training.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="projects" class="projects">
+<section id="projects">
 
-<h2 class="section-title">Featured Projects</h2>
+<h2>Featured Projects</h2>
 
-<div class="project-box">
-<h3>Commercial Building Design</h3>
-<p>Multi-storey building structural design and detailing.</p>
+<div class="cards">
+
+<div class="card">
+<h3>Commercial Building Projects</h3>
+<p>Multi-storey commercial structures and office developments.</p>
 </div>
 
-<div class="project-box">
-<h3>Residential Development</h3>
-<p>Design and supervision of residential housing projects.</p>
+<div class="card">
+<h3>Residential Housing Projects</h3>
+<p>Modern residential developments and estate infrastructure.</p>
 </div>
 
-<div class="project-box">
-<h3>Retaining Wall Construction</h3>
-<p>Design and implementation support for retaining structures.</p>
-</div>
-
-<div class="project-box">
-<h3>Infrastructure Development</h3>
-<p>Roads, drainage systems and public infrastructure consultancy.</p>
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Our Process</h2>
-
-<div class="process">
-
-<div class="step">
-<h3>1. Consultation</h3>
-<p>Understanding client needs.</p>
-</div>
-
-<div class="step">
-<h3>2. Planning</h3>
-<p>Developing project strategies.</p>
-</div>
-
-<div class="step">
-<h3>3. Design</h3>
-<p>Detailed engineering solutions.</p>
-</div>
-
-<div class="step">
-<h3>4. Execution</h3>
-<p>Technical support and supervision.</p>
-</div>
-
-<div class="step">
-<h3>5. Delivery</h3>
-<p>Successful project completion.</p>
+<div class="card">
+<h3>Infrastructure Projects</h3>
+<p>Roads, drainage systems and public engineering works.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="contact" class="contact">
+<section id="consultant">
 
-<h2 class="section-title">Contact Us</h2>
+<h2>Principal Consultant</h2>
 
-<p><strong>EZESjnr Engineering Consult</strong></p>
+<img src="images/founder.jpg" alt="Principal Consultant" class="founder">
 
-<p>📞 Your Phone Number</p>
+<h3>Engr. Hughes Ota</h3>
 
-<p>📧 Your Email Address</p>
+<p>
 
-<p>📍 Your Office Address</p>
+Civil Engineer | Structural Design Specialist |
+Construction Consultant | Project Management Professional
 
-<br>
+</p>
 
-<a href="mailto:your@email.com" class="btn">
-Get Free Consultation
+<p>
+
+Engr. Hughes Ota is the founder and principal consultant of
+EZESjnr Engineering Consult. He specializes in structural analysis,
+structural design, project planning, construction supervision,
+reinforced concrete design and infrastructure development.
+
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>Address:</strong> Opp. RNU VC Lodge, 3 Corners Agbani, Enugu State.</p>
+
+<p><strong>Phone:</strong> +2347038220775 | +2348149021681</p>
+
+<p><strong>Email:</strong> ezeengineeringconsultl@gmail.com</p>
+
+<a href="https://wa.me/2349024315821" class="btn">
+Chat on WhatsApp
 </a>
 
 </section>
@@ -344,11 +224,24 @@ Get Free Consultation
 <footer>
 
 <p>
-© 2026 EZESjnr Engineering Consult.
-All Rights Reserved.
+EZESjnr Engineering Consult
+</p>
+
+<p>
+Engineering Excellence • Innovative Solutions • Trusted Results
+</p>
+
+<p>
+© 2026 All Rights Reserved
 </p>
 
 </footer>
+
+<a href="https://wa.me/2349024315821" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
